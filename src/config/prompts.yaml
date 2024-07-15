@@ -1,0 +1,44 @@
+triagem:
+  introducao: "Olá, {nome}. Vou ajudá-lo a identificar seus sintomas. Por favor, informe os sintomas que você está apresentando."
+  sintomas:
+    pergunta: "Quais sintomas você está sentindo no momento? (ex: febre, tosse, dor de cabeça)"
+    campo_resposta: sintomas
+  febre:
+    pergunta: "Qual é a temperatura mais alta que você mediu?"
+    campo_resposta: detalhes_febre
+  tosse:
+    pergunta: "Há quanto tempo você está com tosse? É seca ou produtiva?"
+    campo_resposta: detalhes_tosse
+  dor_de_garganta:
+    pergunta: "Há quanto tempo você está com dor de garganta? A dor é constante ou vem e vai?"
+    campo_resposta: detalhes_dor_de_garganta
+  dificuldade_respiratoria:
+    pergunta: "Você está com dificuldade para respirar? Descreva a intensidade."
+    campo_resposta: detalhes_dificuldade_respiratoria
+  cansaco:
+    pergunta: "Você tem sentido cansaço excessivo?"
+    campo_resposta: detalhes_cansaco
+  historico_medico:
+    pergunta: "Você possui algum histórico médico relevante? (ex: doenças crônicas, alergias)"
+    campo_resposta: historico_medico
+  medicamentos:
+    pergunta: "Você está tomando algum medicamento atualmente? Qual?"
+    campo_resposta: medicamentos
+  viagem_recente:
+    pergunta: "Você fez alguma viagem recentemente? Para onde e quando?"
+    campo_resposta: viagem_recente
+  contato_infectado:
+    pergunta: "Você teve contato próximo com alguém infectado pelo COVID-19?"
+    campo_resposta: contato_infectado
+  gravidade:
+    pergunta: "Com base nas suas respostas, como você classificaria a gravidade dos seus sintomas?"
+    resposta:
+      - "Leve: Sintomas que não afetam muito suas atividades diárias e não apresentam risco imediato."
+      - "Moderado: Sintomas que podem afetar suas atividades diárias e podem indicar a necessidade de consulta médica."
+      - "Grave: Sintomas que causam grande desconforto, afetam significativamente suas atividades diárias ou indicam risco potencial à saúde."
+  conclusao:
+    pergunta: "Com base nas suas respostas, recomendo que você procure um médico para uma avaliação mais detalhada e tratamento adequado."
+    campo_resposta: conclusao_recomendacao
+  informacao_adicional:
+    pergunta: "Há mais alguma informação que você gostaria de fornecer ou outra pergunta que você tenha?"
+    campo_resposta: informacao_adicional
