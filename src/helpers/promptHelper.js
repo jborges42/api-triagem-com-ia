@@ -19,7 +19,7 @@ const construirPrompt = (data) => {
     nome,
     idade,
     sexo,
-    endereço,
+    endereco,
     contato,
     sintomas,
     detalhes_febre,
@@ -44,7 +44,7 @@ const construirPrompt = (data) => {
     `- **Nome**: ${nome}\n` +
     `- **Idade**: ${idade}\n` +
     `- **Sexo**: ${sexo}\n` +
-    `- **Endereço**: ${endereço}\n` +
+    `- **Endereço**: ${endereco}\n` +
     `- **Contato**: Telefone: ${contato.telefone}, Email: ${contato.email}\n` +
     `- **Sintomas**: ${sintomas.join(', ')}\n\n` +
 

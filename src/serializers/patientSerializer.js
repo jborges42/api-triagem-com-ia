@@ -5,7 +5,7 @@ const serializePatientData = (data) => {
     nome,
     idade,
     sexo,
-    endereço,
+    endereco,
     contato,
     sintomas,
     detalhes_febre,
@@ -32,7 +32,7 @@ const serializePatientData = (data) => {
     nome: String(nome),
     idade: String(idade),
     sexo: String(sexo),
-    endereço: String(endereço),
+    endereco: String(endereco),
     contato: {
       telefone: String(contato.telefone),
       email: String(contato.email),
