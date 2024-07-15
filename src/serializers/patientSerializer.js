@@ -1,4 +1,3 @@
-// serializers/patientSerializer.js
 const serializePatientData = (data) => {
 
   const {
@@ -25,7 +24,6 @@ const serializePatientData = (data) => {
     atividade_fisica,
   } = data;
 
-  // Converter todos os campos para strings e sintomas em uma lista se não for uma
   const sintomasLista = Array.isArray(sintomas) ? sintomas : [sintomas];
 
   return {

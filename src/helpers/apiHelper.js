@@ -1,7 +1,6 @@
 const axios = require('axios');
 const { openaiApiUrl, openaiApiKey } = require('../config/config');
 
-// Função para enviar dados para o GPT
 const enviarParaGPT = async (dadosConsulta) => {
     const headers = {
         'Content-Type': 'application/json',

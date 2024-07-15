@@ -1,21 +1,17 @@
 const express = require('express');
-const app = express();
-const port = process.env.APP_PORT || 8080;
+require('dotenv').config();
 
 const consultaController = require('./controllers/consultaController');
 
-try {
+const app = express();
+const port = process.env.APP_PORT || 8080;
 
-  app.use(express.json());
+app.use(express.json());
 
-  app.post('/consulta', (req, res) => {
-    consultaController.consultarPaciente(req, res);
-  });
+app.post('/consulta', consultaController.consultarPaciente);
 
-  app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-  });
-
-} catch (error) {
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+}).on('error', (error) => {
   console.error('Failed to start server:', error);
-}
+});

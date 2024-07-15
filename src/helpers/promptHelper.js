@@ -2,7 +2,6 @@ const yaml = require('js-yaml');
 const fs = require('fs');
 const { promptsFile } = require('../config/config');
 
-// Função para carregar prompts do arquivo YAML
 const carregarPrompts = () => {
   try {
     const yamlFile = fs.readFileSync(promptsFile, 'utf8');
@@ -13,7 +12,6 @@ const carregarPrompts = () => {
   }
 };
 
-// Função para construir o conteúdo do prompt
 const construirPrompt = (data) => {
   const {
     nome,

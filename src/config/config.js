@@ -1,4 +1,4 @@
-require('dotenv').config(); // Load environment variables
+require('dotenv').config();
 
 module.exports = {
   promptsFile: './src/config/prompts.yaml',
